@@ -16,6 +16,8 @@ Selection
 
 ---
 #二、使用
+加方框的为可选参数，如：[**end**]
+
 ##2.1、获取选择范围util.Selection
 ### 传入参数
  *  {*Object*} **dom** 原生textarea DOM对象
@@ -24,6 +26,7 @@ Selection
  *  {*Array*} **selection** 当前选择情况
  *  {*Number*} **selection[0]** 光标起点
  *  {*Number*} **selection[1]** 光标结束点
+ *  {*String*} **selection[2]** 当前选中的字符
 
 ###dome
 ```javascript
@@ -68,9 +71,9 @@ Selection
 //获取光标位置
 var selection =  $('textarea.test').Selection();
 //设置光标点
-$('textarea.test').Selection(12)
+$('textarea.test').Selection(12);
 //选择字符
-$('textarea.test').Selection(12,24)
+$('textarea.test').Selection(12,24);
 
 ///插入字符
 //自动判断插入点
